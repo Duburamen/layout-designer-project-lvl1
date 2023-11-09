@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.button {
+  display: block;
+  max-width: rem(149);
+  padding: rem(11) rem(24);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 160%;
+  background: $primary;
+  color: $white;
+  transition: background 0.4s ease-out;
+
+  &:hover {
+    background: #ea7600;
+  }
+}
+
+.send-button {
+    
+}
