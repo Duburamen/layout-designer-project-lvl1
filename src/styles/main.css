@@ -1,5 +1,5 @@
 .container {
-  max-width: 83.75rem;
+  max-width: 69.375rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -96,7 +96,7 @@ textarea:not([rows]) {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -108,11 +108,54 @@ a:active {
 }
 
 h1 {
-  font-size: 4.0625rem;
-  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 120%;
 }
 
 h2 {
-  font-size: 3.125rem;
+  font-size: 3.75rem;
+}
+
+h3 {
+  font-size: 2.125rem;
+  line-height: 120%;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+.button {
+  display: block;
+  max-width: 9.3125rem;
+  padding: 0.6875rem 1.5rem;
+  text-transform: uppercase;
   font-weight: 700;
+  line-height: 160%;
+  background: hsl(32, 99%, 50%);
+  color: hsl(0, 0%, 100%);
+  transition: background 0.4s ease-out;
+}
+.button:hover {
+  background: #ea7600;
+}
+
+.header {
+  padding: 6.25rem 0;
+  position: relative;
+  z-index: 100;
+}
+.header::before {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: url(/src/img/background.png), hsl(0, 0%, 83%) 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
 }/*# sourceMappingURL=main.css.map */

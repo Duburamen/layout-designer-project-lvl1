@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.header {
+    padding: rem(100) 0;
+    position: relative;
+    z-index: 100;
+
+  &::before {
+    @include background;
+  }
+  &__body {
+  }
+
+  &__top {
+  }
+
+  &__heading {
+
+  }
+
+  &__image {
+  }
+
+  &__bottom {
+  }
+
+  &__text {
+
+  }
+
+  &__first-column {
+  }
+
+  &__second-column {
+  }
+
+  &__button {
+  }
+}
+.container {
+}
