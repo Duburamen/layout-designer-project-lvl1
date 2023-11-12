@@ -228,5 +228,53 @@ h3 {
 }
 
 .distortions {
+  padding: 6.25rem 0;
   background: #42413C;
+}
+.distortions__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.875rem;
+}
+.distortions__title {
+  font-size: 3.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+.distortions__title span {
+  color: #FE8A02;
+}
+.distortions__card {
+  flex: 0 0 31%;
+}
+.distortions__card:not(:first-child) {
+  background: #F5F4F0;
+}
+.distortions__card:hover:not(:first-child) {
+  background: #FE8A02;
+}
+
+.card__content {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.card__content:hover {
+  color: #fff;
+}
+.card__content:hover .card__title {
+  color: #fff;
+}
+.card__number {
+  margin-bottom: 2.5rem;
+  font-family: "Neucha", cursive;
+  font-size: 4rem;
+  line-height: normal;
+}
+.card__title {
+  margin-bottom: 1rem;
+  color: #FE8A02;
 }/*# sourceMappingURL=main.css.map */
