@@ -3,7 +3,7 @@
 .header {
     padding: rem(100) 0;
     position: relative;
-    z-index: 100;
+    z-index: 0;
 
   &::before {
     @include background;
@@ -32,7 +32,7 @@
     position: absolute;
     top: rem(-55);
     right: rem(-400);
-    z-index: -100;
+    z-index: 0;
   }
 
   &__bottom {

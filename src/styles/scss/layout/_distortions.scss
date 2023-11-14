@@ -38,9 +38,8 @@
 }
 
 .card {
-
   &__link {
-    
+    color: $primary-dark;
   }
 
   &__content {
@@ -54,14 +53,14 @@
       color: $white;
     }
 
-    &:hover .card__title{
+    &:hover .card__title {
       color: $white;
     }
   }
 
   &__number {
     margin-bottom: rem(40);
-    font-family: 'Neucha', cursive;
+    font-family: "Neucha", cursive;
     font-size: rem(64);
     line-height: normal;
   }
