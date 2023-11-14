@@ -1,9 +1,9 @@
 @use "../abstracts/" as *;
 
 .header {
-    padding: rem(100) 0;
-    position: relative;
-    z-index: 0;
+  padding: rem(100) 0;
+  position: relative;
+  z-index: 1;
 
   &::before {
     @include background;
@@ -27,16 +27,14 @@
 
   &__image {
     & img {
-      
     }
     position: absolute;
     top: rem(-55);
-    right: rem(-400);
-    z-index: 0;
+    right: rem(-380);
+    z-index: -1;
   }
 
   &__bottom {
-    
   }
 
   &__text {
