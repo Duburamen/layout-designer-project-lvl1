@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .distortions {
-  padding: rem(100) 0;
+  padding: rem(200) 0 rem(100) 0;
   background: $primary-dark;
 
   &__body {

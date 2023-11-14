@@ -268,7 +268,6 @@ h3 {
 
 .about {
   padding: 6.25rem 0;
-  height: 90vh;
 }
 .about__body {
   position: relative;
@@ -286,17 +285,13 @@ h3 {
 .about__text {
   margin-bottom: 1.875rem;
 }
-.about__video {
-  position: absolute;
-  top: 14.0625rem;
-}
-
 .video {
+  margin-bottom: -12.5rem;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .distortions {
-  padding: 6.25rem 0;
+  padding: 12.5rem 0 6.25rem 0;
   background: #42413C;
 }
 .distortions__nav {
