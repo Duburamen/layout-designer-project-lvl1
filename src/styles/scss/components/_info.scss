@@ -1,1 +1,76 @@
 @use "../abstracts/" as *;
+
+.info {
+  padding: rem(100) 0;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  background-color: #F5F4F0;
+
+  &::before {
+    @include background;
+  }
+
+  &__body {
+  }
+
+  &__top {
+    margin-bottom: rem(100);
+    display: flex;
+    justify-content: center;
+    gap: rem(30);
+  }
+
+  &__image {
+    flex: 0 0 50%;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  &__title {
+  }
+
+  &__subheading {
+    font-family: Neucha, cursive;
+    font-size: rem(24);
+    color: $dark-50;
+  }
+
+  &__heading {
+  margin-bottom: rem(30);
+  }
+
+  &__desc {
+    font-family: Neucha, cursive;
+    font-size: rem(34);
+    line-height: 120%;
+    color: $dark;
+  }
+
+  &__bottom {
+  }
+
+  &__header-small {
+    padding: rem(5) rem(10);
+    margin-bottom: rem(20);
+    font-size: rem(14);
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $white;
+    background: $brown;
+  }
+
+  &__text {
+    display: flex;
+    gap: rem(30);
+  }
+
+  &__first-column {
+    flex: 0 0 50%;
+  }
+
+  &__second-column {
+    flex: 0 0 50%;
+  }
+}
+

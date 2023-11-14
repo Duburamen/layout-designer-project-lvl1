@@ -18,6 +18,10 @@ html {
   text-size-adjust: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Remove default margin in favour of better control in authored CSS */
 body,
 h1,
@@ -103,7 +107,6 @@ html {
 a,
 a:visited,
 a:active {
-  color: #000;
   text-decoration: none;
 }
 
@@ -149,20 +152,85 @@ h3 {
   background: #ea7600;
 }
 
-.header {
+.info {
   padding: 6.25rem 0;
   position: relative;
-  z-index: 100;
+  z-index: 1;
+  height: 100vh;
+  background-color: #F5F4F0;
 }
-.header::before {
+.info::before {
   position: absolute;
-  z-index: -100;
+  z-index: -50;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   content: "";
-  background: url(/src/img/background.png), hsl(0, 0%, 83%) 50%;
+  background: url(/src/img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+.info__top {
+  margin-bottom: 6.25rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+}
+.info__image {
+  flex: 0 0 50%;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
+}
+.info__subheading {
+  font-family: Neucha, cursive;
+  font-size: 1.5rem;
+  color: #908D8B;
+}
+.info__heading {
+  margin-bottom: 1.875rem;
+}
+.info__desc {
+  font-family: Neucha, cursive;
+  font-size: 2.125rem;
+  line-height: 120%;
+  color: #2A2626;
+}
+.info__header-small {
+  padding: 0.3125rem 0.625rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #fff;
+  background: #B09A81;
+}
+.info__text {
+  display: flex;
+  gap: 1.875rem;
+}
+.info__first-column {
+  flex: 0 0 50%;
+}
+.info__second-column {
+  flex: 0 0 50%;
+}
+
+.header {
+  padding: 6.25rem 0;
+  position: relative;
+  z-index: 0;
+}
+.header::before {
+  position: absolute;
+  z-index: -50;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: url(/src/img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -181,7 +249,7 @@ h3 {
   position: absolute;
   top: -3.4375rem;
   right: -25rem;
-  z-index: -100;
+  z-index: 0;
 }
 .header__text {
   display: flex;
@@ -255,6 +323,9 @@ h3 {
   background: #FE8A02;
 }
 
+.card__link {
+  color: #42413C;
+}
 .card__content {
   padding: 1.5rem;
   height: 100%;
