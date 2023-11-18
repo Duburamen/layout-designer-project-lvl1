@@ -153,6 +153,7 @@ h3 {
 
 .info {
   padding: 6.25rem 0;
+  height: 100vh;
   position: relative;
   z-index: 1;
   color: #2A2626;
@@ -160,7 +161,6 @@ h3 {
 }
 .info::before {
   position: absolute;
-  z-index: -50;
   top: 0;
   left: 0;
   height: 100%;
@@ -170,6 +170,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+  pointer-events: none;
 }
 .info__top {
   margin-bottom: 6.25rem;
@@ -218,6 +219,7 @@ h3 {
 
 .info-dark {
   padding: 6.25rem 0;
+  height: 100vh;
   position: relative;
   z-index: 1;
   background-color: #B09A81;
@@ -225,7 +227,6 @@ h3 {
 }
 .info-dark::before {
   position: absolute;
-  z-index: -50;
   top: 0;
   left: 0;
   height: 100%;
@@ -235,6 +236,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+  pointer-events: none;
 }
 .info-dark__top {
   margin-bottom: 6.25rem;
@@ -289,7 +291,6 @@ h3 {
 }
 .header::before {
   position: absolute;
-  z-index: -50;
   top: 0;
   left: 0;
   height: 100%;
@@ -299,6 +300,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+  pointer-events: none;
 }
 .header__top {
   margin-bottom: 14.0625rem;
