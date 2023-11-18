@@ -6,7 +6,18 @@
   z-index: 1;
 
   &::before {
-    @include background;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: url(/src/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    pointer-events: none;
   }
 
   &__body {

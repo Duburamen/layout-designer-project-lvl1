@@ -2,14 +2,25 @@
 
 .info-dark {
   padding: rem(100) 0;
-  height: 100vh;
+
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background-color: $brown;
   color: $white;
 
   &::before {
-    @include background;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: url(/src/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    pointer-events: none;
   }
 
   &__body {
@@ -38,7 +49,7 @@
   }
 
   &__heading {
-  margin-bottom: rem(30);
+    margin-bottom: rem(30);
   }
 
   &__desc {
@@ -75,4 +86,3 @@
     flex: 0 0 50%;
   }
 }
-

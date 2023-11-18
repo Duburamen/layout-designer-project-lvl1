@@ -153,16 +153,16 @@ h3 {
 
 .info {
   padding: 6.25rem 0;
-  height: 100vh;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   color: #2A2626;
-  background-color: #F5F4F0;
+  background-color: #f5f4f0;
 }
 .info::before {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   height: 100%;
   width: 100%;
   content: "";
@@ -219,9 +219,8 @@ h3 {
 
 .info-dark {
   padding: 6.25rem 0;
-  height: 100vh;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background-color: #B09A81;
   color: #fff;
 }
@@ -229,6 +228,7 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   height: 100%;
   width: 100%;
   content: "";
@@ -293,6 +293,7 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   height: 100%;
   width: 100%;
   content: "";
