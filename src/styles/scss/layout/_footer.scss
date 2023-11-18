@@ -1,0 +1,102 @@
+@use "../abstracts/" as *;
+
+.footer {
+  padding: rem(100) 0;
+
+  &__newsletter {
+    margin-bottom: rem(60);
+    padding: rem(55);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $primary-dark;
+    color: $white;
+  }
+
+  &__contact {
+    text-align: center;
+    font-size: rem(14);
+  }
+
+  &__copyright {
+    margin-bottom: rem(16);
+  }
+
+  &__reference {
+    margin-bottom: rem(16);
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+
+  &__hexlet {
+  }
+}
+
+.newsletter {
+  &__heading {
+    flex: 0 0 45%;
+  }
+
+  &__send {
+    flex: 0 0 45%;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: rem(10);
+    font-size: rem(18);
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  &__input {
+    padding: rem(15);
+    width: 100%;
+    height: rem(50);
+    border: 1px solid #e3e3e3;
+    color: #757575;
+  }
+
+  &__button {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url(/src/img/send.svg);
+      top: rem(13);
+      left: rem(24);
+      pointer-events: none;
+    }
+  }
+
+  &__btn {
+    padding: 0;
+    width: rem(70);
+    height: rem(50);
+    border: none;
+    background: $primary;
+    cursor: pointer;
+  }
+
+  &__svg {
+    position: absolute;
+    top: rem(13);
+    left: rem(23);
+    z-index: 0;
+  }
+
+  &__rules {
+    font-size: rem(12);
+    line-height: 160%;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
