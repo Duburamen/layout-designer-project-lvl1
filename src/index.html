@@ -327,23 +327,28 @@
       <footer class="footer">
         <div class="footer__container container">
           <div class="footer__newsletter">
-            <div class="newsletter__heading"></div>
-            <div class="newsletter__form">
-              <div class="newsletter__title"></div>
-              <form action="" class="newsletter__form">
+            <h3 class="newsletter__heading">
+              Хотите узнать больше? <br />
+              Подпишитесь на обновления
+            </h3>
+            <div class="newsletter__send">
+              <h4 class="newsletter__title">Электронная почта</h4>
+              <form class="newsletter__form" method="post">
                 <input
                   type="email"
                   class="newsletter__input"
                   name="email"
                   placeholder="Ваша электронная почта"
                 />
-                <input type="submit" class="newsletter__button" value="Отправить" />
+                <div class="newsletter__button">
+                  <input type="submit" class="newsletter__btn" value="" />
+                </div>
               </form>
+              <p class="newsletter__rules">
+                Подписываясь, вы принимаете
+                <a href="№" class="newsletter__link">правила сервиса</a>
+              </p>
             </div>
-            <p class="newsletter__rules">
-              Подписываясь, вы принимаете
-              <a href="№" class="newsletter__link">правила сервиса</a>
-            </p>
           </div>
           <div class="footer__contact">
             <p class="footer__copyright">© 2020 Константин Константинопольский</p>
