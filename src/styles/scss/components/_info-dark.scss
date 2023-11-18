@@ -9,18 +9,7 @@
   color: $white;
 
   &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    content: "";
-    background: url(/src/img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    pointer-events: none;
+    @include background;
   }
 
   &__body {
@@ -30,7 +19,6 @@
     margin-bottom: rem(100);
     display: flex;
     flex-flow: row-reverse;
-    justify-content: center;
     gap: rem(30);
   }
 
@@ -49,7 +37,7 @@
   }
 
   &__heading {
-    margin-bottom: rem(30);
+  margin-bottom: rem(30);
   }
 
   &__desc {
@@ -86,3 +74,4 @@
     flex: 0 0 50%;
   }
 }
+
